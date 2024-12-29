@@ -8,8 +8,8 @@ export interface PlayRecord {
 }
 
 export class Table extends Component<HTMLElement>{
-    private _playerLabel: HTMLElement = this.element.querySelector('.player-label');
-    private _resetButton: HTMLElement = this.element.querySelector('.reset-button');
+    private _playerLabel: HTMLElement = this.element.querySelector('.player-label') as HTMLElement;
+    private _resetButton: HTMLElement = this.element.querySelector('.reset-button') as HTMLElement;
     private _currentPlayer: string = "X";
     private _spots: string[] = Array(9).fill("");
 
